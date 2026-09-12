@@ -1,0 +1,734 @@
+<!--СТРАНИЦА КАТАЛОГА-->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+
+<body>
+    <div class="top center">
+        <header class="header">
+            <a href="index.html" class="header__img">
+                <svg viewBox="0 0 198 44" xmlns="http://www.w3.org/2000/svg" width="198" height="44" fill="none">
+                    <path id="Interier"
+                        d="M3.564 9.706L8.172 9.706L8.172 27.598L21.708 9.706L26.064 9.706L26.064 34.906L21.456 34.906L21.456 17.05L7.92 34.906L3.564 34.906L3.564 9.706ZM32.6256 15.682L37.1256 15.682L37.1256 23.494L46.8096 23.494L46.8096 15.682L51.3096 15.682L51.3096 34.906L46.8096 34.906L46.8096 27.31L37.1256 27.31L37.1256 34.906L32.6256 34.906L32.6256 15.682ZM72.5684 19.498L65.8364 19.498L65.8364 34.906L61.3364 34.906L61.3364 19.498L54.5684 19.498L54.5684 15.682L72.5684 15.682L72.5684 19.498ZM92.9888 25.402C92.9888 25.714 92.9648 26.158 92.9168 26.734L77.8328 26.734C78.0968 28.15 78.7808 29.278 79.8848 30.118C81.0128 30.934 82.4048 31.342 84.0608 31.342C86.1728 31.342 87.9128 30.646 89.2808 29.254L91.6928 32.026C90.8288 33.058 89.7368 33.838 88.4168 34.366C87.0968 34.894 85.6088 35.158 83.9528 35.158C81.8408 35.158 79.9808 34.738 78.3728 33.898C76.7648 33.058 75.5168 31.894 74.6288 30.406C73.7648 28.894 73.3328 27.19 73.3328 25.294C73.3328 23.422 73.7528 21.742 74.5928 20.254C75.4568 18.742 76.6448 17.566 78.1568 16.726C79.6688 15.886 81.3728 15.466 83.2688 15.466C85.1408 15.466 86.8088 15.886 88.2728 16.726C89.7608 17.542 90.9128 18.706 91.7288 20.218C92.5688 21.706 92.9888 23.434 92.9888 25.402ZM83.2688 19.066C81.8288 19.066 80.6048 19.498 79.5968 20.362C78.6128 21.202 78.0128 22.33 77.7968 23.746L88.7048 23.746C88.5128 22.354 87.9248 21.226 86.9408 20.362C85.9568 19.498 84.7328 19.066 83.2688 19.066ZM108.567 15.466C110.439 15.466 112.107 15.874 113.571 16.69C115.059 17.506 116.223 18.658 117.063 20.146C117.903 21.634 118.323 23.35 118.323 25.294C118.323 27.238 117.903 28.966 117.063 30.478C116.223 31.966 115.059 33.118 113.571 33.934C112.107 34.75 110.439 35.158 108.567 35.158C105.975 35.158 103.923 34.294 102.411 32.566L102.411 41.89L97.9107 41.89L97.9107 15.682L102.195 15.682L102.195 18.202C102.939 17.29 103.851 16.606 104.931 16.15C106.035 15.694 107.247 15.466 108.567 15.466ZM108.063 31.306C109.719 31.306 111.075 30.754 112.131 29.65C113.211 28.546 113.751 27.094 113.751 25.294C113.751 23.494 113.211 22.042 112.131 20.938C111.075 19.834 109.719 19.282 108.063 19.282C106.983 19.282 106.011 19.534 105.147 20.038C104.283 20.518 103.599 21.214 103.095 22.126C102.591 23.038 102.339 24.094 102.339 25.294C102.339 26.494 102.591 27.55 103.095 28.462C103.599 29.374 104.283 30.082 105.147 30.586C106.011 31.066 106.983 31.306 108.063 31.306ZM132.449 22.018C134.897 22.018 136.769 22.57 138.065 23.674C139.385 24.778 140.045 26.338 140.045 28.354C140.045 30.466 139.325 32.098 137.885 33.25C136.445 34.402 134.417 34.966 131.801 34.942L122.801 34.906L122.801 15.682L127.301 15.682L127.301 21.982L132.449 22.018ZM131.405 31.63C132.725 31.654 133.733 31.378 134.429 30.802C135.125 30.226 135.473 29.386 135.473 28.282C135.473 27.202 135.137 26.41 134.465 25.906C133.793 25.402 132.773 25.138 131.405 25.114L127.301 25.078L127.301 31.594L131.405 31.63ZM162.001 25.402C162.001 25.714 161.977 26.158 161.929 26.734L146.845 26.734C147.109 28.15 147.793 29.278 148.897 30.118C150.025 30.934 151.417 31.342 153.073 31.342C155.185 31.342 156.925 30.646 158.293 29.254L160.705 32.026C159.841 33.058 158.749 33.838 157.429 34.366C156.109 34.894 154.621 35.158 152.965 35.158C150.853 35.158 148.993 34.738 147.385 33.898C145.777 33.058 144.529 31.894 143.641 30.406C142.777 28.894 142.345 27.19 142.345 25.294C142.345 23.422 142.765 21.742 143.605 20.254C144.469 18.742 145.657 17.566 147.169 16.726C148.681 15.886 150.385 15.466 152.281 15.466C154.153 15.466 155.821 15.886 157.285 16.726C158.773 17.542 159.925 18.706 160.741 20.218C161.581 21.706 162.001 23.434 162.001 25.402ZM152.281 19.066C150.841 19.066 149.617 19.498 148.609 20.362C147.625 21.202 147.025 22.33 146.809 23.746L157.717 23.746C157.525 22.354 156.937 21.226 155.953 20.362C154.969 19.498 153.745 19.066 152.281 19.066ZM177.578 15.466C179.45 15.466 181.118 15.874 182.582 16.69C184.07 17.506 185.234 18.658 186.074 20.146C186.914 21.634 187.334 23.35 187.334 25.294C187.334 27.238 186.914 28.966 186.074 30.478C185.234 31.966 184.07 33.118 182.582 33.934C181.118 34.75 179.45 35.158 177.578 35.158C174.986 35.158 172.934 34.294 171.422 32.566L171.422 41.89L166.922 41.89L166.922 15.682L171.206 15.682L171.206 18.202C171.95 17.29 172.862 16.606 173.942 16.15C175.046 15.694 176.258 15.466 177.578 15.466ZM177.074 31.306C178.73 31.306 180.086 30.754 181.142 29.65C182.222 28.546 182.762 27.094 182.762 25.294C182.762 23.494 182.222 22.042 181.142 20.938C180.086 19.834 178.73 19.282 177.074 19.282C175.994 19.282 175.022 19.534 174.158 20.038C173.294 20.518 172.61 21.214 172.106 22.126C171.602 23.038 171.35 24.094 171.35 25.294C171.35 26.494 171.602 27.55 172.106 28.462C172.61 29.374 173.294 30.082 174.158 30.586C175.022 31.066 175.994 31.306 177.074 31.306ZM192.829 35.158C192.014 35.158 191.318 34.882 190.742 34.33C190.165 33.754 189.878 33.034 189.878 32.17C189.878 31.282 190.154 30.562 190.706 30.01C191.281 29.458 191.99 29.182 192.829 29.182C193.669 29.182 194.365 29.458 194.917 30.01C195.493 30.562 195.781 31.282 195.781 32.17C195.781 33.034 195.493 33.754 194.917 34.33C194.342 34.882 193.646 35.158 192.829 35.158Z"
+                        fill="rgb(255,255,255)" fill-rule="nonzero" />
+                </svg>
+            </a>
+            <input class="header__input" type="text" placeholder="Поиск">
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__links"><a class="header__links" href="testcat.html">Каталог</a></li>
+                    <li class="header__links"><a class="header__links" href="testcart.html">Корзина</a></li>
+                </ul>
+            </nav>
+            <div class="header__mobile">
+                <a href="#">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_53373_428)">
+                            <path
+                                d="M9.29907 1.11316C10.9342 1.06267 12.5273 1.63644 13.7542 2.71863C14.9811 3.80099 15.7498 5.31046 15.9036 6.93933C16.0545 8.53827 15.5992 10.133 14.634 11.4139L17.968 14.7469C18.0508 14.8297 18.1166 14.9279 18.1614 15.036C18.2062 15.1442 18.2297 15.2607 18.2297 15.3778C18.2297 15.4949 18.2062 15.6114 18.1614 15.7196C18.1165 15.8277 18.0508 15.9259 17.968 16.0087C17.8853 16.0914 17.7871 16.1572 17.679 16.202C17.5707 16.2469 17.4543 16.2694 17.3372 16.2694C17.22 16.2694 17.1036 16.2469 16.9954 16.202C16.8873 16.1572 16.789 16.0914 16.7063 16.0087L13.3733 12.6747C12.0925 13.6424 10.4962 14.0991 8.89575 13.9491C7.26568 13.7962 5.75519 13.0275 4.67212 11.7997C3.58905 10.5718 3.01496 8.97713 3.06665 7.3407C3.11846 5.7041 3.79274 4.14806 4.95142 2.99109C6.10904 1.83516 7.66391 1.16376 9.29907 1.11316ZM9.50903 2.91882C8.28235 2.92382 7.10691 3.41275 6.2395 4.28015C5.37213 5.14755 4.88317 6.32302 4.87817 7.54968C4.87324 8.77628 5.35288 9.95557 6.21313 10.83C6.64353 11.2674 7.15644 11.6151 7.72192 11.8534C8.28759 12.0918 8.89521 12.2161 9.50903 12.2186C10.1227 12.2211 10.7307 12.1017 11.2981 11.868C11.8657 11.6343 12.3816 11.2903 12.8157 10.8563C13.2497 10.4223 13.5936 9.90633 13.8274 9.33875C14.061 8.77131 14.1804 8.16333 14.178 7.54968C14.1755 6.93585 14.0511 6.32824 13.8127 5.76257C13.5744 5.19707 13.2267 4.68419 12.7893 4.25378C11.9149 3.3935 10.7357 2.91387 9.50903 2.91882Z"
+                                fill="white" stroke="white" stroke-width="0.2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_53373_428">
+                                <rect width="19" height="19" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="testcat.html">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="4.57143" height="4.57143" fill="white" />
+                        <rect y="7.31427" width="4.57143" height="4.57143" fill="white" />
+                        <rect y="14.6285" width="4.57143" height="4.57143" fill="white" />
+                        <rect x="7.31348" y="7.31427" width="4.57143" height="4.57143" fill="white" />
+                        <rect x="7.31348" y="14.6285" width="4.57143" height="4.57143" fill="white" />
+                        <rect x="7.31348" width="4.57143" height="4.57143" fill="white" />
+                        <rect x="14.6279" y="7.31427" width="4.57143" height="4.57143" fill="white" />
+                        <rect x="14.6279" y="14.6285" width="4.57143" height="4.57143" fill="white" />
+                        <rect x="14.6279" width="4.57143" height="4.57143" fill="white" />
+                    </svg>
+                </a>
+                <a href="testcart.html"><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5834 20.8333C15.1359 20.8333 15.6658 20.6138 16.0566 20.2231C16.4473 19.8324 16.6667 19.3025 16.6667 18.75C16.6667 18.1975 16.4473 17.6676 16.0566 17.2768C15.6658 16.8861 15.1359 16.6667 14.5834 16.6667C14.0309 16.6667 13.501 16.8861 13.1103 17.2768C12.7196 17.6676 12.5001 18.1975 12.5001 18.75C12.5001 19.3025 12.7196 19.8324 13.1103 20.2231C13.501 20.6138 14.0309 20.8333 14.5834 20.8333ZM7.29174 20.8333C7.84428 20.8333 8.37418 20.6138 8.76488 20.2231C9.15558 19.8324 9.37508 19.3025 9.37508 18.75C9.37508 18.1975 9.15558 17.6676 8.76488 17.2768C8.37418 16.8861 7.84428 16.6667 7.29174 16.6667C6.73921 16.6667 6.20931 16.8861 5.81861 17.2768C5.4279 17.6676 5.20841 18.1975 5.20841 18.75C5.20841 19.3025 5.4279 19.8324 5.81861 20.2231C6.20931 20.6138 6.73921 20.8333 7.29174 20.8333ZM20.873 6.16978C21.133 6.16139 21.3796 6.0522 21.5606 5.86528C21.7416 5.67837 21.8428 5.42839 21.8428 5.16822C21.8428 4.90804 21.7416 4.65807 21.5606 4.47115C21.3796 4.28424 21.133 4.17504 20.873 4.16666H19.674C18.7345 4.16666 17.922 4.81874 17.7178 5.73541L16.4126 11.6125C16.2084 12.5292 15.3959 13.1812 14.4563 13.1812H6.63133L5.12924 7.17082H14.8636C15.1212 7.15907 15.3644 7.04847 15.5425 6.86202C15.7206 6.67558 15.82 6.42764 15.82 6.16978C15.82 5.91192 15.7206 5.66398 15.5425 5.47754C15.3644 5.2911 15.1212 5.18049 14.8636 5.16874H5.12924C4.82473 5.16865 4.5242 5.23799 4.25051 5.37148C3.97682 5.50498 3.73716 5.69912 3.54976 5.93914C3.36236 6.17916 3.23215 6.45875 3.16903 6.75665C3.10591 7.05455 3.11154 7.36292 3.1855 7.65832L4.68758 13.6667C4.79586 14.1002 5.046 14.4851 5.39821 14.7601C5.75042 15.0351 6.18447 15.1844 6.63133 15.1844H14.4563C15.368 15.1845 16.2524 14.8737 16.9636 14.3032C17.6748 13.7328 18.1701 12.9368 18.3678 12.0469L19.674 6.16978H20.873Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+        <section class="section">
+            <h1 class="section__heading">Каталог</h1>
+        </section>
+    </div>
+    <div class="select center">
+        <h2 class="select__heading">Главная / Каталог товаров</h2>
+        <div class="select__catalog">
+            <details>
+                <summary class="select__btn select__filter">Фильтрация</summary>
+                <form action="#" method="get" class="form">
+                    <div class="form__box">
+                        <div class="form__date">
+                            <fieldset class="date">
+                                <legend class="date__heading form__heading">Сроки доставки</legend>
+                                <div class="date__radio">
+                                    <input type="radio" name="delivery-options" id="option1" class="date__input">
+                                    <label class="date__text" for="option1">Неважно</label>
+                                </div>
+                                <div class="date__radio">
+                                    <!-- Исправлено: уникальные id для radio -->
+                                    <input type="radio" name="delivery-options" id="option2" class="date__input">
+                                    <label class="date__text" for="option2">Сегодня</label>
+                                </div>
+                                <div class="date__radio">
+                                    <input type="radio" name="delivery-options" id="option3" class="date__input">
+                                    <label class="date__text" for="option3">Завтра</label>
+                                </div>
+                                <div class="date__radio">
+                                    <input type="radio" name="delivery-options" id="option4" class="date__input">
+                                    <label class="date__text" for="option4">До 3 дней</label>
+                                </div>
+                                <div class="date__radio">
+                                    <input type="radio" name="delivery-options" id="option5" class="date__input">
+                                    <label class="date__text" for="option5">До 7 дней</label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="slider">
+                                <legend class="slider__heading form__heading">Цена</legend>
+                                <div class="slider__range">
+                                    <label class="slider__price slider__text" for="range_1">от 0. руб до 100000.
+                                        руб</label>
+                                    <div class="slider__input">
+                                        <input class="slider__band" id="range_1" name="range_1" type="range" min="1"
+                                            max="100000" value="1">
+                                        <input class="slider__band" name="range_2" type="range" min="1" max="100000"
+                                            value="2">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form__color">
+                                <fieldset class="color">
+                                    <legend class="color__heading form__heading">Цвет</legend>
+                                    <div class="color__band">
+                                        <div class="color__white">
+                                            <input type="checkbox" class="color__input" name="color" id="check_white">
+                                            <label for="check_white"
+                                                class="color__label color__white color__text"></label>
+                                        </div>
+                                        <div class="color__black">
+                                            <input type="checkbox" class="color__input" name="color" id="check_black">
+                                            <label for="check_black"
+                                                class="color__label color__black color__text"></label>
+                                        </div>
+                                        <div class="color__grey">
+                                            <input type="checkbox" class="color__input" name="color" id="check_grey">
+                                            <label for="check_grey"
+                                                class="color__label color__grey color__text"></label>
+                                        </div>
+                                        <div class="color__red">
+                                            <input type="checkbox" class="color__input" name="color" id="check_red">
+                                            <label for="check_red" class="color__label color__red color__text"></label>
+                                        </div>
+                                        <div class="color__orange">
+                                            <input type="checkbox" class="color__input" name="color" id="check_orange">
+                                            <label for="check_orange"
+                                                class="color__label color__orange color__text"></label>
+                                        </div>
+                                        <div class="color__yellow">
+                                            <input type="checkbox" class="color__input" name="color" id="check_yellow">
+                                            <label for="check_yellow"
+                                                class="color__label color__yellow color__text"></label>
+                                        </div>
+                                        <div class="color__green">
+                                            <input type="checkbox" class="color__input" name="color" id="check_green">
+                                            <label for="check_green"
+                                                class="color__label color__green color__text"></label>
+                                        </div>
+                                        <div class="color__coral">
+                                            <input type="checkbox" class="color__input" name="color" id="check_coral">
+                                            <label for="check_coral"
+                                                class="color__label color__coral color__text"></label>
+                                        </div>
+                                        <div class="color__blue">
+                                            <input type="checkbox" class="color__input" name="color" id="check_blue">
+                                            <label for="check_blue"
+                                                class="color__label color__blue color__text"></label>
+                                        </div>
+                                        <div class="color__dark">
+                                            <input type="checkbox" class="color__input" name="color"
+                                                id="check_dark_blue">
+                                            <label for="check_dark_blue"
+                                                class="color__label color__darkblue color__text"></label>
+                                        </div>
+                                        <div class="color__lipurple">
+                                            <input type="checkbox" class="color__input" name="color"
+                                                id="check_lipurple">
+                                            <label for="check_lipurple"
+                                                class="color__label color__lipurple color__text"></label>
+                                        </div>
+                                        <div class="color__purple">
+                                            <input type="checkbox" class="color__input" name="color" id="check_purple">
+                                            <label for="check_purple"
+                                                class="color__label color__purple color__text"></label>
+                                        </div>
+                                        <div class="color__lilac">
+                                            <input type="checkbox" class="color__input" name="color" id="check_lilac">
+                                            <label for="check_lilac"
+                                                class="color__label color__lilac color__text"></label>
+                                        </div>
+                                        <div class="color__pink">
+                                            <input type="checkbox" class="color__input" name="color" id="check_pink">
+                                            <label for="check_pink"
+                                                class="color__label color__pink color__text"></label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <fieldset class="room">
+                            <legend class="room__heading form__heading">Тип комнаты</legend>
+                            <!-- Исправлено: уникальные id для checkbox -->
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_kitchen">
+                                <label class="room__checkbox room__text" for="room_kitchen">Кухня и столовая</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_bathroom">
+                                <label class="room__checkbox room__text" for="room_bathroom">Ванная комната</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_children">
+                                <label class="room__checkbox room__text" for="room_children">Детская комната</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_office">
+                                <label class="room__checkbox room__text" for="room_office">Домашний офис</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_living">
+                                <label class="room__checkbox room__text" for="room_living">Гостиная</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_hall">
+                                <label class="room__checkbox room__text" for="room_hall">Прихожая</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_bedroom">
+                                <label class="room__checkbox room__text" for="room_bedroom">Спальня</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_wardrobe">
+                                <label class="room__checkbox room__text" for="room_wardrobe">Гардероб</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_cottage">
+                                <label class="room__checkbox room__text" for="room_cottage">Дача</label>
+                            </div>
+                            <div class="room__type">
+                                <input type="checkbox" class="room__input" name="room" id="room_light">
+                                <label class="room__checkbox room__text" for="room_light">Свет</label>
+                            </div>
+                            <div>
+                                <button class="form__btn" type="submit">Принять</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </details>
+            <select class="select__btn select__popular">
+                <option value="popular">По популярности</option>
+                <option value="new">Cначала новые</option>
+                <option value="old">Сначала старые</option>
+            </select>
+        </div>
+    </div>
+    <div class="content center">
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img  class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <!--tablet-->
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__tablet">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <!--mobile-->
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r3.png" alt="menu">
+            <h3 class="content__heading">Стол MENU</h3>
+            <p class="content__text">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="content__price">34 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r3.png" alt="menu">
+            <h3 class="content__heading">Стол MENU</h3>
+            <p class="content__text">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="content__price">34 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r3.png" alt="menu">
+            <h3 class="content__heading">Стол MENU</h3>
+            <p class="content__text">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="content__price">34 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image content__mobile">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r3.png" alt="menu">
+            <h3 class="content__heading">Стол MENU</h3>
+            <p class="content__text">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="content__price">34 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r3.png" alt="menu">
+            <h3 class="content__heading">Стол MENU</h3>
+            <p class="content__text">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="content__price">34 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r4.png" alt="askesta">
+            <h3 class="content__heading">Диван ASKESTA</h3>
+            <p class="content__text">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную
+                кровать</p>
+            <p class="content__price">68 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r5.png" alt="lunar">
+            <h3 class="content__heading">Кресло LUNAR</h3>
+            <p class="content__text">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+            <p class="content__price">40 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r6.png" alt="nastan">
+            <h3 class="content__heading">Шкаф Nastan</h3>
+            <p class="content__text">Мебель может быть оснащена разнообразными системами подсветки.</p>
+            <p class="content__price">80 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r1.png" alt="tatran">
+            <h3 class="content__heading">Кровать TATRAN</h3>
+            <p class="content__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+            </p>
+            <p class="content__price">120 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r2.png" alt="vilora">
+            <h3 class="content__heading">Кресло VILORA</h3>
+            <p class="content__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                ткань. </p>
+            <p class="content__price">21 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r3.png" alt="menu">
+            <h3 class="content__heading">Стол MENU</h3>
+            <p class="content__text">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="content__price">34 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r4.png" alt="askesta">
+            <h3 class="content__heading">Диван ASKESTA</h3>
+            <p class="content__text">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную
+                кровать</p>
+            <p class="content__price">68 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r5.png" alt="lunar">
+            <h3 class="content__heading">Кресло LUNAR</h3>
+            <p class="content__text">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+            <p class="content__price">40 000 руб.</p>
+        </article>
+        <article class="content__image">
+            <div class="content__icons">
+                <img src="image/key.svg" class="icon" alt="key">
+                <img src="image/heart.png" class="icon" alt="heart">
+            </div>
+            <img class="content__cart" src="image/r6.png" alt="nastan">
+            <h3 class="content__heading">Шкаф Nastan</h3>
+            <p class="content__text">Мебель может быть оснащена разнообразными системами подсветки.</p>
+            <p class="content__price">80 000 руб.</p>
+        </article>
+    </div>
+    <a href="#" class="contlink center">Показать ещё</a>
+
+    <footer class="footer center">
+        <div class="footer__logo">
+            <a href="index.html">
+                <svg viewBox="0 0 198 44" xmlns="http://www.w3.org/2000/svg" width="198" height="44" fill="none">
+                    <path id="InterierFooter"
+                        d="M3.564 34.906L3.564 9.706L8.172 9.706L8.172 27.598L21.708 9.706L26.064 9.706L26.064 34.906L21.456 34.906L21.456 17.05L7.92 34.906L3.564 34.906ZM32.6256 34.906L32.6256 15.682L37.1256 15.682L37.1256 23.494L46.8096 23.494L46.8096 15.682L51.3096 15.682L51.3096 34.906L46.8096 34.906L46.8096 27.31L37.1256 27.31L37.1256 34.906L32.6256 34.906ZM61.3364 34.906L61.3364 18.418L62.3804 19.498L54.5684 19.498L54.5684 15.682L72.5684 15.682L72.5684 19.498L64.7924 19.498L65.8364 18.418L65.8364 34.906L61.3364 34.906ZM83.9528 35.158C81.8168 35.158 79.9448 34.738 78.3368 33.898C76.7528 33.034 75.5168 31.858 74.6288 30.37C73.7648 28.882 73.3328 27.19 73.3328 25.294C73.3328 23.374 73.7528 21.682 74.5928 20.218C75.4568 18.73 76.6328 17.566 78.1208 16.726C79.6328 15.886 81.3488 15.466 83.2688 15.466C85.1408 15.466 86.8088 15.874 88.2728 16.69C89.7368 17.506 90.8888 18.658 91.7288 20.146C92.5688 21.634 92.9888 23.386 92.9888 25.402C92.9888 25.594 92.9768 25.81 92.9528 26.05C92.9528 26.29 92.9408 26.518 92.9168 26.734L76.8968 26.734L76.8968 23.746L90.5408 23.746L88.7768 24.682C88.8008 23.578 88.5728 22.606 88.0928 21.766C87.6128 20.926 86.9528 20.266 86.1128 19.786C85.2968 19.306 84.3488 19.066 83.2688 19.066C82.1648 19.066 81.1928 19.306 80.3528 19.786C79.5368 20.266 78.8888 20.938 78.4088 21.802C77.9528 22.642 77.7248 23.638 77.7248 24.79L77.7248 25.51C77.7248 26.662 77.9888 27.682 78.5168 28.57C79.0448 29.458 79.7888 30.142 80.7488 30.622C81.7088 31.102 82.8128 31.342 84.0608 31.342C85.1408 31.342 86.1128 31.174 86.9768 30.838C87.8408 30.502 88.6088 29.974 89.2808 29.254L91.6928 32.026C90.8288 33.034 89.7368 33.814 88.4168 34.366C87.1208 34.894 85.6328 35.158 83.9528 35.158ZM108.567 35.158C107.007 35.158 105.579 34.798 104.283 34.078C103.011 33.358 101.991 32.278 101.223 30.838C100.479 29.374 100.107 27.526 100.107 25.294C100.107 23.038 100.467 21.19 101.187 19.75C101.931 18.31 102.939 17.242 104.211 16.546C105.483 15.826 106.935 15.466 108.567 15.466C110.463 15.466 112.131 15.874 113.571 16.69C115.035 17.506 116.187 18.646 117.027 20.11C117.891 21.574 118.323 23.302 118.323 25.294C118.323 27.286 117.891 29.026 117.027 30.514C116.187 31.978 115.035 33.118 113.571 33.934C112.131 34.75 110.463 35.158 108.567 35.158ZM97.9107 41.89L97.9107 15.682L102.195 15.682L102.195 20.218L102.051 25.33L102.411 30.442L102.411 41.89L97.9107 41.89ZM108.063 31.306C109.143 31.306 110.103 31.066 110.943 30.586C111.807 30.106 112.491 29.41 112.995 28.498C113.499 27.586 113.751 26.518 113.751 25.294C113.751 24.046 113.499 22.978 112.995 22.09C112.491 21.178 111.807 20.482 110.943 20.002C110.103 19.522 109.143 19.282 108.063 19.282C106.983 19.282 106.011 19.522 105.147 20.002C104.283 20.482 103.599 21.178 103.095 22.09C102.591 22.978 102.339 24.046 102.339 25.294C102.339 26.518 102.591 27.586 103.095 28.498C103.599 29.41 104.283 30.106 105.147 30.586C106.011 31.066 106.983 31.306 108.063 31.306ZM132.449 22.018C134.921 22.018 136.805 22.57 138.101 23.674C139.397 24.778 140.045 26.338 140.045 28.354C140.045 30.442 139.325 32.074 137.885 33.25C136.445 34.402 134.417 34.966 131.801 34.942L122.801 34.906L122.801 15.682L127.301 15.682L127.301 21.982L132.449 22.018ZM131.405 31.63C132.725 31.654 133.733 31.378 134.429 30.802C135.125 30.226 135.473 29.386 135.473 28.282C135.473 27.178 135.125 26.386 134.429 25.906C133.757 25.402 132.749 25.138 131.405 25.114L127.301 25.078L127.301 31.594L131.405 31.63ZM152.965 35.158C150.829 35.158 148.957 34.738 147.349 33.898C145.765 33.034 144.529 31.858 143.641 30.37C142.777 28.882 142.345 27.19 142.345 25.294C142.345 23.374 142.765 21.682 143.605 20.218C144.469 18.73 145.645 17.566 147.133 16.726C148.645 15.886 150.361 15.466 152.281 15.466C154.153 15.466 155.821 15.874 157.285 16.69C158.749 17.506 159.901 18.658 160.741 20.146C161.581 21.634 162.001 23.386 162.001 25.402C162.001 25.594 161.989 25.81 161.965 26.05C161.965 26.29 161.953 26.518 161.929 26.734L145.909 26.734L145.909 23.746L159.553 23.746L157.789 24.682C157.813 23.578 157.585 22.606 157.105 21.766C156.625 20.926 155.965 20.266 155.125 19.786C154.309 19.306 153.361 19.066 152.281 19.066C151.177 19.066 150.205 19.306 149.365 19.786C148.549 20.266 147.901 20.938 147.421 21.802C146.965 22.642 146.737 23.638 146.737 24.79L146.737 25.51C146.737 26.662 147.001 27.682 147.529 28.57C148.057 29.458 148.801 30.142 149.761 30.622C150.721 31.102 151.825 31.342 153.073 31.342C154.153 31.342 155.125 31.174 155.989 30.838C156.853 30.502 157.621 29.974 158.293 29.254L160.705 32.026C159.841 33.034 158.749 33.814 157.429 34.366C156.133 34.894 154.645 35.158 152.965 35.158ZM177.578 35.158C176.018 35.158 174.59 34.798 173.294 34.078C172.022 33.358 171.002 32.278 170.234 30.838C169.49 29.374 169.118 27.526 169.118 25.294C169.118 23.038 169.478 21.19 170.198 19.75C170.942 18.31 171.95 17.242 173.222 16.546C174.494 15.826 175.946 15.466 177.578 15.466C179.474 15.466 181.142 15.874 182.582 16.69C184.046 17.506 185.198 18.646 186.038 20.11C186.902 21.574 187.334 23.302 187.334 25.294C187.334 27.286 186.902 29.026 186.038 30.514C185.198 31.978 184.046 33.118 182.582 33.934C181.142 34.75 179.474 35.158 177.578 35.158ZM166.922 41.89L166.922 15.682L171.206 15.682L171.206 20.218L171.062 25.33L171.422 30.442L171.422 41.89L166.922 41.89ZM177.074 31.306C178.154 31.306 179.114 31.066 179.954 30.586C180.818 30.106 181.502 29.41 182.006 28.498C182.51 27.586 182.762 26.518 182.762 25.294C182.762 24.046 182.51 22.978 182.006 22.09C181.502 21.178 180.818 20.482 179.954 20.002C179.114 19.522 178.154 19.282 177.074 19.282C175.994 19.282 175.022 19.522 174.158 20.002C173.294 20.482 172.61 21.178 172.106 22.09C171.602 22.978 171.35 24.046 171.35 25.294C171.35 26.518 171.602 27.586 172.106 28.498C172.61 29.41 173.294 30.106 174.158 30.586C175.022 31.066 175.994 31.306 177.074 31.306ZM192.865 35.158C192.049 35.158 191.353 34.882 190.777 34.33C190.201 33.754 189.913 33.034 189.913 32.17C189.913 31.258 190.201 30.538 190.777 30.01C191.353 29.458 192.049 29.182 192.865 29.182C193.681 29.182 194.377 29.458 194.953 30.01C195.529 30.538 195.817 31.258 195.817 32.17C195.817 33.034 195.529 33.754 194.953 34.33C194.377 34.882 193.681 35.158 192.865 35.158Z"
+                        fill="rgb(0,0,0)" fill-rule="nonzero" />
+                </svg>
+            </a>
+        </div>
+        <div class="footer__box">
+            <div class="footer__menu">
+                <h4 class="footer__title footer__title_menu">Меню</h4>
+                <nav>
+                    <ul class="footer__nav">
+                        <li class="footer__links"><a class="footer__links" href="index.html">Главная</a></li>
+                        <li class="footer__links"><a class="footer__links" href="testcat.html">Каталог</a></li>
+                        <li class="footer__links"><a class="footer__links" href="testcart.html">Корзина</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__info">
+                <div class="footer__contact">
+                    <h4 class="footer__title">Контакты</h4>
+                    <a class="footer__links" href="tel:+79088008080">+7 908 800 80 80</a>
+                    <a class="footer__links" href="mailto:help@interier.com">help@interier.com</a>
+                </div>
+                <div class="footer__icons">
+                    <a href="#">
+                        <svg class="icons" viewBox="0 0 24.0005 14" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000504" height="14.000000" fill="none">
+                            <path id="Vector-social-1"
+                                d="M23.45 0.948C23.616 0.402 23.45 0 
+                        22.655 0L20.03 0C19.362 0 19.054 0.347 
+                        18.887 0.73C18.887 0.73 17.552 3.926
+                         15.661 6.002C15.049 6.604 14.771
+                          6.795 14.437 6.795C14.27 6.795 
+                          14.019 6.604 14.019 6.057L14.019 
+                          0.948C14.019 0.292 13.835 0 13.279
+                           0L9.151 0C8.734 0 8.483 0.304 8.483
+                            0.593C8.483 1.214 9.429 1.358 9.526
+                             3.106L9.526 6.904C9.526 7.737 9.373
+                              7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0L0.9 0C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997L14.028 10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14L23.03 14C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948L23.45 0.948Z"
+                                fill="rgb(136.078,136.078,136.078)" fill-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icons" viewBox="0 0 21 17.6757" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="21.000000" height="17.675659" fill="none">
+                            <path id="Vector-social-2"
+                                d="M19.2952 0.200894L0.690166 7.4125C-0.0585331 7.74834 -0.311764 8.42087 0.509205 8.78587L5.28219 10.3105L16.8227 3.14143C17.4528 2.69136 18.0979 2.81137 17.5428 3.30647L7.63107 12.3272L7.31972 16.1448C7.6081 16.7342 8.13614 16.737 8.47296 16.444L11.2152 13.8359L15.9117 17.3709C17.0025 18.02 17.596 17.6011 17.8307 16.4114L20.9112 1.74952C21.231 0.285058 20.6856 -0.360199 19.2952 0.200894Z"
+                                fill="rgb(136.078,136.078,136.078)" fill-rule="nonzero" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icons" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="19.000000" height="18.000000" fill="none">
+                            <path id="Vector-social-3"
+                                d="M11.3321 10.7357C9.83927 12.195 9.7307 14.0143 9.60177 18C13.5239 18 16.2314 17.9871 17.6293 16.7014C18.9864 15.3771 19 12.69 19 9.09643C14.7928 9.225 12.8725 9.32143 11.3321 10.7357ZM-1.52588e-05 9.09643C-1.52588e-05 12.69 0.0135561 15.3771 1.3707 16.7014C2.76856 17.9871 5.47606 18 9.3982 18C9.26248 14.0143 9.1607 12.195 7.66784 10.7357C6.12748 9.32143 4.20713 9.21857 -1.52588e-05 9.09643ZM9.3982 0C5.48284 0 2.76856 0.0128571 1.3707 1.29857C0.0135561 2.62286 -1.52588e-05 5.31 -1.52588e-05 8.90357C4.20713 8.775 6.12748 8.67857 7.66784 7.26429C9.1607 5.805 9.26927 3.98571 9.3982 0ZM11.3321 7.26429C9.83927 5.805 9.7307 3.98571 9.60177 0C13.5239 0 16.2314 0.0128571 17.6293 1.29857C18.9864 2.62286 19 5.31 19 8.90357C14.7928 8.775 12.8725 8.67857 11.3321 7.26429Z"
+                                fill="rgb(136.078,136.078,136.078)" fill-rule="nonzero" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="formfoot">
+            <form class="footer__form" action="#">
+                <p class="footer__text">Получайте наши новости и обновления</p>
+                <input class="footer__input" type="email" placeholder="Ваш e-mail">
+                <button class="footer__btn" type="submit">Подписаться</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -30,10 +30,6 @@
 - JavaScript (ES6)
 - Google Fonts (Montserrat, Poppins)
 
-## 🚀 Как запустить локально
-1. Скачай репозиторий
-2. Открой `index.html` в браузере
-
 ## 📁 Структура
 - `index.html` — главная страница
 - `testcat.html` — каталог
